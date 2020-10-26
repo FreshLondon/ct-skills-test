@@ -1,0 +1,30 @@
+/**
+ * Less bootstrap file
+ * Used as the import wrapper for all less componenets and libs
+ * By default we include bootstrap and some components
+ * We use include some custom abstracted compoents 
+ * 
+ * @version 1.1.2
+ * @since 1.0
+ */
+// Import libs, variables and plugins
+@import 'lib/variables';
+@import 'lib/mixins';
+
+// Import components
+@import 'components/normalize';
+@import 'components/fonts';
+@import 'components/global';
+
+body {
+  @import 'components/top-bar';
+  @import 'components/navigation';
+  @import 'components/header';
+  @import 'components/typography';
+  @import 'components/content';
+  @import 'components/forms';
+  @import 'components/buttons';
+  @import 'components/footer';
+}
+
+//@import 'lib/slick-theme';

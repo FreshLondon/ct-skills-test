@@ -1,0 +1,55 @@
+#top-bar {
+  background-color: #ff6200;
+  font-family: $font-bebas;
+  color: #be3600;
+  min-height: 34px;
+
+  .topbar-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 34px;
+
+	.topbar-left {
+	  font-size: 14.77px;
+
+	  a {
+		color: #fff;
+		text-decoration: none;
+		transition: ease all .3s;
+		margin-left: 16px;
+
+		&:hover {
+		  color: #fff;
+		  text-decoration: underline;
+		}
+	  }
+	}
+
+	.topbar-right {
+	  font-size: 14.62px;
+
+	  a {
+		text-decoration: none;
+		margin-right: 11px;
+		transition: ease all .3s;
+
+		&:hover {
+		  text-decoration: underline;
+		}
+
+		&:last-child {
+		  margin-right: 0;
+		}
+
+		&.link-dark {
+		  color: #be3600;
+		}
+
+		&.link-light {
+		  color: #fff;
+		}
+	  }
+	}
+  }
+}
